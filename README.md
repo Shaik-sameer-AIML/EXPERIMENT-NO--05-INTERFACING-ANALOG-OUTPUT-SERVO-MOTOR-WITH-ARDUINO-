@@ -67,8 +67,10 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
+```
 Name : Shaik Sameer
 Register No: 212221240051
+```
 ### Off Setup:
 ![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a1.PNG?raw=true)
 ### On Setup:
