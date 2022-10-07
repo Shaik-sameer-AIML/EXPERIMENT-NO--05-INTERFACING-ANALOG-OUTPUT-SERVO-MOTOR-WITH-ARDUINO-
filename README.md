@@ -65,7 +65,7 @@ CIRCUIT DIAGRAM
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device.
 
-
+```
 ### PROGRAM :
 Name : Shaik Sameer
 Register No: 212221240051
@@ -149,6 +149,6 @@ void loop()
 }
 
 ![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a3.PNG?raw=true)
-
+```
 ### RESULTS: 
 Arduino uno interfacing with servo motor is learned and angular position is controlled using PWM signal.
