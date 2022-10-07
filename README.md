@@ -65,17 +65,90 @@ CIRCUIT DIAGRAM
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device.
 
-
+```
 ### PROGRAM :
- 
+Name : Shaik Sameer
+Register No: 212221240051
+### Off Setup:
+![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a1.PNG?raw=true)
+### On Setup:
+![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a2.PNG?raw=true)
 
 
+### Serial Monitor :
+
+// C++ code
+//
+#include <Servo.h>
+int pos = 0;
+
+Servo servo_11;
+
+void setup()
+{
+  servo_11.attach(11,500,2500);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  for (pos = 0;pos<=180;pos+=1)
+  {
+    servo_11.write(pos);
+    delay(5);
+    Serial.print("angle of servo= ");
+  Serial.println(pos);
+  }
+  for (pos = 180;pos>=0;pos-=1)
+  {
+    servo_11.write(pos);
+    delay(10);
+    Serial.print("angle of servo= ");
+  Serial.println(pos);
+  }
+  delay(100);
+  Serial.print("angle of servo= ");
+  Serial.println(pos);
+}
+### Output:
+![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a4.PNG?raw=true)
 
 
+### Toggle graph:
+// C++ code
+#include <Servo.h>
+int pos = 0;
 
+Servo servo_11;
 
+void setup()
+{
+  servo_11.attach(11,500,2500);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  for (pos = 0;pos<=180;pos+=1)
+  {
+    servo_11.write(pos);
+    delay(5);
+    //Serial.print("angle of servo= ");
+  Serial.println(pos);
+  }
+  for (pos = 180;pos>=0;pos-=1)
+  {
+    servo_11.write(pos);
+    delay(10);
+    //Serial.print("angle of servo= ");
+  Serial.println(pos);
+  }
+  delay(100);
+  Serial.print("angle of servo= ");
+  Serial.println(pos);
+}
 
+![output](https://github.com/Shaik-sameer-AIML/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/blob/main/a3.PNG?raw=true)
 
 ### RESULTS: 
 Arduino uno interfacing with servo motor is learned and angular position is controlled using PWM signal.
